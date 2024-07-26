@@ -2,15 +2,25 @@
 
 int main()
 {
-	int N, i, buf, min=1000000, max=-1000000;
+	int n, buf, min=1000001, max=-1000001;
 
-	scanf("%d", &N);
-
-	for(i=0; i<N; ++i)
+	scanf("%d", &n);
+	
+	if(n == 1)
 	{
 		scanf("%d", &buf);
-		if(buf>max)			max=buf;
-		else if(buf<min)	min=buf;
+		min=max=buf;
 	}
+	else
+	{
+		while(n > 0)
+		{
+			scanf("%d", &buf);
+			if(max < buf)	max=buf;
+			if(min > buf)	min=buf;
+			n--;
+		}
+	}
+
 	printf("%d %d", min, max);
 }

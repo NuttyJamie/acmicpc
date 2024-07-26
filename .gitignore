@@ -36,6 +36,9 @@
 *.x86_64
 *.hex
 
+# Swap files
+*.swp
+
 # Debug files
 *.dSYM/
 *.su
