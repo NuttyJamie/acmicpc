@@ -1,0 +1,242 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_M	15829.c	3;"	d	file:
+_r	15829.c	2;"	d	file:
+add	15740.c	/^int add(char *arr1, char *arr2)$/;"	f
+add	2338.c	/^int add(char *arr1, char *arr2)$/;"	f
+camel	16205.c	/^char*	camel	(char *string, int size)$/;"	f
+ch	2596.c	/^	char ch;$/;"	m	struct:dic	file:
+cmp	18110.c	/^int cmp(const void *a, const void *b)$/;"	f
+curve	1952.c	/^int curve(int x, int y)$/;"	f
+dic	2596.c	/^struct dic$/;"	s	file:
+dn	4673.c	/^int dn(int n)$/;"	f
+dot	2903.c	/^int dot(int i)$/;"	f
+factorial	10872.c	/^int factorial(int n)$/;"	f
+fibonacci	10870.c	/^int fibonacci(int N)$/;"	f
+getBiggerAbs	15740.c	/^char* getBiggerAbs(char *arr1, char *arr2)$/;"	f
+getBiggerAbs	2338.c	/^char* getBiggerAbs(char *arr1, char *arr2)$/;"	f
+getscore	25206.c	/^double getscore(char* grade)$/;"	f
+honeynum	2292.c	/^int honeynum(int n)$/;"	f
+intpow	2745_2.c	/^long intpow(int x, int y)$/;"	f
+isHansu	1065.c	/^int isHansu(int n)$/;"	f
+main	1002.c	/^int main()$/;"	f
+main	10101.c	/^int main()$/;"	f
+main	1011.c	/^int main()$/;"	f
+main	10170.c	/^int main()$/;"	f
+main	1018.c	/^int main()$/;"	f
+main	10189.c	/^int main()$/;"	f
+main	10250.c	/^int main()$/;"	f
+main	1037.c	/^int main()$/;"	f
+main	1065.c	/^int main()$/;"	f
+main	10699.c	/^int main()$/;"	f
+main	10773.c	/^int main()$/;"	f
+main	10798.c	/^int main()$/;"	f
+main	10807.c	/^int main()$/;"	f
+main	10809.c	/^int main()$/;"	f
+main	10810.c	/^int main()$/;"	f
+main	10811.c	/^int main()$/;"	f
+main	10813.c	/^int main()$/;"	f
+main	10817.c	/^int main()$/;"	f
+main	10818.c	/^int main()$/;"	f
+main	1085.c	/^int main()$/;"	f
+main	10870.c	/^int main()$/;"	f
+main	10871.c	/^int main()$/;"	f
+main	10872.c	/^int main()$/;"	f
+main	10926.c	/^int main()$/;"	f
+main	1094.c	/^int main()$/;"	f
+main	10950.c	/^int main()$/;"	f
+main	10951.c	/^int main()$/;"	f
+main	10952.c	/^int main()$/;"	f
+main	10988.c	/^int main()$/;"	f
+main	10989.c	/^int main()$/;"	f
+main	11005.c	/^int main()$/;"	f
+main	11021.c	/^int main()$/;"	f
+main	11022.c	/^int main()$/;"	f
+main	11050.c	/^int main()$/;"	f
+main	1110.c	/^int main()$/;"	f
+main	11382.c	/^int main()$/;"	f
+main	1152.c	/^int main()$/;"	f
+main	1157.c	/^int main()$/;"	f
+main	11648.c	/^int main()$/;"	f
+main	11651.c	/^int main()$/;"	f
+main	11653.c	/^int main()$/;"	f
+main	11653_2.c	/^int main()$/;"	f
+main	11654.c	/^int main()$/;"	f
+main	11718.c	/^int main()$/;"	f
+main	11720.c	/^int main()$/;"	f
+main	1181.c	/^int main()$/;"	f
+main	11908.c	/^int main()$/;"	f
+main	1193.c	/^int main()$/;"	f
+main	11942.c	/^int main()$/;"	f
+main	11970.c	/^int main()$/;"	f
+main	1237.c	/^int main()$/;"	f
+main	1259.c	/^int main()$/;"	f
+main	1264.c	/^int main()$/;"	f
+main	1271.c	/^int main()$/;"	f
+main	13118.c	/^int main()$/;"	f
+main	1316.c	/^int main()$/;"	f
+main	1330.c	/^int main()$/;"	f
+main	13419.c	/^int main()$/;"	f
+main	14215.c	/^int main()$/;"	f
+main	1427.c	/^int main()$/;"	f
+main	1436.c	/^int main()$/;"	f
+main	14681.c	/^int main()$/;"	f
+main	14726.c	/^int main()$/;"	f
+main	1546.c	/^int main()$/;"	f
+main	15552.c	/^int main()$/;"	f
+main	15596.c	/^int main()$/;"	f
+main	15727.c	/^int main()$/;"	f
+main	15733.c	/^int main()$/;"	f
+main	15740.c	/^int main()$/;"	f
+main	15740_old.c	/^int main()$/;"	f
+main	15829.c	/^int main()$/;"	f
+main	15894.c	/^int main()$/;"	f
+main	15964.c	/^int main()$/;"	f
+main	16205.c	/^int main()$/;"	f
+main	16483.c	/^int main()$/;"	f
+main	16546.c	/^int main()$/;"	f
+main	1712.c	/^int main()$/;"	f
+main	17944.c	/^int main()$/;"	f
+main	18108.c	/^int main()$/;"	f
+main	18110.c	/^int main()$/;"	f
+main	1929.c	/^int main()$/;"	f
+main	1952.c	/^int main()$/;"	f
+main	19532.c	/^int main()$/;"	f
+main	1966.c	/^int main()$/;"	f
+main	1978.c	/^int main()$/;"	f
+main	20124.c	/^int main()$/;"	f
+main	20205.c	/^int main()$/;"	f
+main	20492.c	/^int main()$/;"	f
+main	2083.c	/^int main()$/;"	f
+main	21300.c	/^int main()$/;"	f
+main	2231.c	/^int main()$/;"	f
+main	2292.c	/^int main()$/;"	f
+main	2338.c	/^int main()$/;"	f
+main	2393.c	/^int main()$/;"	f
+main	2420.c	/^int main()$/;"	f
+main	24262.c	/^int main()$/;"	f
+main	24263.c	/^int main()$/;"	f
+main	24264.c	/^int main()$/;"	f
+main	24265.c	/^int main()$/;"	f
+main	24266.c	/^int main()$/;"	f
+main	24267.c	/^int main()$/;"	f
+main	24313.c	/^int main()$/;"	f
+main	2438.c	/^int main()$/;"	f
+main	2439.c	/^int main()$/;"	f
+main	2440.c	/^int main()$/;"	f
+main	2444.c	/^int main()$/;"	f
+main	2475.c	/^int main()$/;"	f
+main	2480.c	/^int main()$/;"	f
+main	2484.c	/^int main()$/;"	f
+main	2501.c	/^int main()$/;"	f
+main	25083.c	/^int main()$/;"	f
+main	25206.c	/^int main()$/;"	f
+main	2525.c	/^int main()$/;"	f
+main	25304.c	/^int main()$/;"	f
+main	25305.c	/^int main()$/;"	f
+main	25314.c	/^int main()$/;"	f
+main	25494.c	/^int main()$/;"	f
+main	25495.c	/^int main()$/;"	f
+main	2558.c	/^int main()$/;"	f
+main	2562.c	/^int main()$/;"	f
+main	2563.c	/^int main()$/;"	f
+main	2566.c	/^int main()$/;"	f
+main	2577.c	/^int main()$/;"	f
+main	2581.c	/^int main()$/;"	f
+main	2587.c	/^int main()$/;"	f
+main	2588.c	/^int main()$/;"	f
+main	25904.c	/^int main()$/;"	f
+main	2596.c	/^int main()$/;"	f
+main	25991.c	/^int main()$/;"	f
+main	26082.c	/^int main()$/;"	f
+main	2609.c	/^int main()$/;"	f
+main	26500.c	/^int main()$/;"	f
+main	2675.c	/^int main()$/;"	f
+main	2720.c	/^int main()$/;"	f
+main	27310.c	/^int main()$/;"	f
+main	27323.c	/^int main()$/;"	f
+main	2738.c	/^int main()$/;"	f
+main	2739.c	/^int main()$/;"	f
+main	2741.c	/^int main()$/;"	f
+main	2742.c	/^int main()$/;"	f
+main	2743.c	/^int main()$/;"	f
+main	2744.c	/^int main()$/;"	f
+main	2745.c	/^int main()$/;"	f
+main	2745_2.c	/^int main()$/;"	f
+main	2750.c	/^int main()$/;"	f
+main	2753.c	/^int main()$/;"	f
+main	2754.c	/^int main()$/;"	f
+main	2775.c	/^int main()$/;"	f
+main	27866.c	/^int main()$/;"	f
+main	27889.c	/^int main()$/;"	f
+main	2798.c	/^int main()$/;"	f
+main	2829.c	/^int main()$/;"	f
+main	28444.c	/^int main()$/;"	f
+main	28453.c	/^int main()$/;"	f
+main	2869.c	/^int main()$/;"	f
+main	28702.c	/^int main()$/;"	f
+main	2884.c	/^int main()$/;"	f
+main	2903.c	/^int main()$/;"	f
+main	2908.c	/^int main()$/;"	f
+main	2920.c	/^int main()$/;"	f
+main	2941.c	/^int main()$/;"	f
+main	2991.c	/^int main()$/;"	f
+main	3003.c	/^int main()$/;"	f
+main	3009.c	/^int main()$/;"	f
+main	3046.c	/^int main()$/;"	f
+main	3052.c	/^int main()$/;"	f
+main	3053.c	/^int main()$/;"	f
+main	30802.c	/^int main()$/;"	f
+main	31403.c	/^int main()$/;"	f
+main	31668.c	/^int main()$/;"	f
+main	31831.c	/^int main()$/;"	f
+main	31922.c	/^int main()$/;"	f
+main	32369.c	/^int main()$/;"	f
+main	32370.c	/^int main()$/;"	f
+main	32371.c	/^int main()$/;"	f
+main	32372.c	/^int main()$/;"	f
+main	3733.c	/^int main()$/;"	f
+main	3943.c	/^int main()$/;"	f
+main	4101.c	/^int main()$/;"	f
+main	4153.c	/^int main()$/;"	f
+main	4344.c	/^int main()$/;"	f
+main	4673.c	/^int main()$/;"	f
+main	4948.c	/^int main()$/;"	f
+main	5073.c	/^int main()$/;"	f
+main	5086.c	/^int main()$/;"	f
+main	5300.c	/^int main()$/;"	f
+main	5339.c	/^int main()$/;"	f
+main	5357.c	/^int main()$/;"	f
+main	5522.c	/^int main()$/;"	f
+main	5543.c	/^int main()$/;"	f
+main	5597.c	/^int main()$/;"	f
+main	5622.c	/^int main()$/;"	f
+main	8393.c	/^int main()$/;"	f
+main	8871.c	/^int main()$/;"	f
+main	8958.c	/^int main()$/;"	f
+main	9020.c	/^int main()$/;"	f
+main	9063.c	/^int main()$/;"	f
+main	9086.c	/^int main()$/;"	f
+main	9498.c	/^int main()$/;"	f
+main	9506.c	/^int main()$/;"	f
+main	9654.c	/^int main()$/;"	f
+main	9699.c	/^int main()$/;"	f
+maxofHailstone	3943.c	/^int maxofHailstone(int n)$/;"	f
+multiply	2338.c	/^int multiply(char *arr1, char *arr2)$/;"	f
+pascal	16205.c	/^char*	pascal	(char *string, int size)$/;"	f
+presult	15740.c	/^int presult(int sign, int carry, char *string, int string_size)$/;"	f
+presult	2338.c	/^int presult(int sign, int carry, char *string, int string_size)$/;"	f
+revnum	2908.c	/^int revnum(int num)$/;"	f
+s	2596.c	/^	char *s;$/;"	m	struct:dic	file:
+score	2754.c	/^float score(char ch)$/;"	f
+snake	16205.c	/^char*	snake	(char *string, int size)$/;"	f
+square	2447.c	/^char square(int n)$/;"	f
+sub	15740.c	/^int sub(char *arr1, char *arr2)$/;"	f
+sub	2338.c	/^int sub(char *arr1, char *arr2)$/;"	f
+subscore	2754.c	/^float subscore(char sig)$/;"	f
+sum	15596.c	/^long long sum(int *a, int n)$/;"	f
+sumplace	2231.c	/^int sumplace(int n)$/;"	f
