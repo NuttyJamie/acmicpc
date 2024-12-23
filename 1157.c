@@ -2,44 +2,25 @@
 
 int main()
 {
-	char word[1000001];
-	int alphabet[26]={0,};
+	char c, i;
+	int max=0;
+	int w[26]={0,};
 
-	int i, j=0, max=0;
-
-	scanf("%s", word);
-
-	for(i=0; word[i]!='\0'; ++i)
+	while((c=getchar()) != '\n')
 	{
-		if(word[i]>'Z')	
-			alphabet[(word[i]-'a')]+=1;
-		else 
-			alphabet[(word[i]-'A')]+=1;
+		if(c < '[')	++w[c-65];
+		else		++w[c-97];
 	}
-/*
-	printf("\n\n alphabet arry:\n");		//debug output
-	for(i=0; i<sizeof(alphabet)/sizeof(int); ++i)
+
+	for(c=0; c < 26; ++c)
 	{
-		printf("%d ", alphabet[i]);
-	}										//output end	
-*/
-	for(i=0; i<sizeof(alphabet)/sizeof(int); ++i)
-	{
-		if(alphabet[i]>max)
+		if(max < w[c])
 		{
-			max=alphabet[i];
-			j=i;
+			max=w[c];
+			i=c;
 		}
+		else if(max == w[c])	i=-1;
 	}
 
-	for(i=0; i<sizeof(alphabet)/sizeof(int); ++i)
-	{
-		if(alphabet[i]==max && i!=j)
-		{
-			putchar('?');
-			break;
-		}
-		else if(i==sizeof(alphabet)/sizeof(int)-1)
-			printf("%c", j+'A');	
-	}
+	putchar((i < 0)?	'?':'A'+i);
 }
