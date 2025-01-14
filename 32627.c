@@ -2,35 +2,29 @@
 
 int main()
 {
-	char s[300000];
-	int n, m, i=0;
+	char s[300001]={0};
+	int n, m, i, d=0;
 	int o[26]={0};
 
 	scanf("%d %d ", &n, &m);
 
-	while(n--)
+	for(i=0; i < n; ++i)
 	{
 		s[i]=getchar();
 		++o[s[i]-'a'];
-		++i;
 	}
-	for(n=0; m; ++n)
+
+	for(i=0; d < m; ++i)	d+=o[i];
+	--i;
+	d=o[i]-d+m;
+	for(n=0; s[n]; ++n)
 	{
-		if(o[n])
+		if(s[n] < i+'a') continue;
+		else if((s[n] == i+'a') && d)
 		{
-			int x=(o[n] > m)?	m:o[n];
-			o[n]-=x;
-			m-=x;
+			--d;
+			continue;
 		}
-	}
-	for(n=0; n < i; ++n)
-	{
-		m=s[n]-'a';
-		//printf("o[%d] is: %d\n", m, o[m]);
-		if(o[m])
-		{
-			putchar(s[n]);
-			--o[m];
-		}
+		else putchar(s[n]);
 	}
 }
