@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <io.h>
+#include <stddef.h>
+#include <unistd.h>
 #include <stdlib.h>
 #define SIZE 4800014
 
@@ -9,19 +10,25 @@ typedef struct
 	int ord;
 }ARR;
 
-ARR* merge_sort(ARR* arr, int size)
+ARR* merge_sort(ARR* arr, int size, int offset)
 {
 	if(size == 1)	return arr;
 	ARR tmp[size];
 	int i, j, k, mid=size>>1, end=size-mid;
 
-	ARR *left=merge_sort(arr, mid);
-	ARR *right=merge_sort(&arr[mid], end);
+	ARR *left=merge_sort(arr, mid, offset);
+	ARR *right=merge_sort(&arr[mid], end, offset);
 
 	for(i=j=k=0; i < size; ++i)
 	{
-		if(j < mid && k < end)	tmp[i]=(left[j].num < right[k].num)?	left[j++]:right[k++];
-		else					tmp[i]=(j < mid)?	left[j++]:right[k++];
+		if(j < mid && k < end)
+		{
+			int left_val=*((int *)((char *)&left[j]+offset));
+			int right_val=*((int *)((char *)&right[k]+offset));
+
+			tmp[i]=(left_val < right_val)?	left[j++]:right[k++];
+		}
+		else tmp[i]=(j < mid)?		left[j++]:right[k++];
 	}
 
 	for(i=0; i < size; ++i)	arr[i]=tmp[i];
@@ -51,11 +58,11 @@ int* int_merge_sort(int* arr, int size)
 
 int main()
 {
-	ARR *d=(ARR *)calloc(0, sizeof(ARR)*200000);
-	int *a=(int *)calloc(0, sizeof(int)*200000);
+	ARR *d=(ARR *)calloc(200000, sizeof(ARR));
+	int *a=(int *)calloc(200000, sizeof(int));
 	char *buf=(char *)malloc(SIZE);
 	char *p=buf;
-	int n=0, m=0, i=0, flag=1;
+	int n=0, m=0, i=0, j=0, flag=1;
 
 	setbuf(stdin, NULL);
 	ssize_t l=read(0, buf, SIZE);
@@ -87,23 +94,33 @@ int main()
 		++p;
 		a[i]*=flag;
 	}
-	for(i=0; i < m; ++i, flag=1)
+	for(j=0; j < m; ++j, flag=1)
 	{
-		d[i].ord=i;
+		d[j].ord=j;
 		while(*p != '\n')
 		{
-			putchar(*p);
-			putchar(' ');
 			if(*p == '-')	flag=-1, ++p;
-			d[i].num*=10;
-			d[i].num+=*p-'0';
+			d[j].num*=10;
+			d[j].num+=*p-'0';
 			++p;
 		}
 		++p;
-		d[i].num*=flag;
-		printf("%d\n", d[i].num);
+		d[j].num*=flag;
 	}
 	int_merge_sort(a, n);
-	for(int i=0; i < n; ++i)	printf("# %d\n", a[i]);
+	merge_sort(d, m, offsetof(ARR, num));
+	i=j=0;
+	while(i < n && j < m)
+	{
+		if(d[j].num == a[i])		d[j].num=i, ++j;
+		else if(d[j].num < a[i])	d[j].num=-1, ++j;
+		else						++i;
+	}
+	while(j < m)	d[j].num=-1, ++j;
+	merge_sort(d, m, offsetof(ARR, ord));
+
+	for(j=0; j < m; ++j)	printf("%d\n", d[j].num);
 	free(buf);
+	free(a);
+	free(d);
 }
