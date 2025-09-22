@@ -1,3 +1,6 @@
+# template files
+tmp_*.c
+
 # undo files
 *.*~
 
